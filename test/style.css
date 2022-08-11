@@ -1,0 +1,271 @@
+div {
+  outline-style: solid;
+  outline-width: 2px;
+}
+p {
+  text-indent: 30px;
+  list-style-type: upper-roman;
+}
+
+.ul {
+  background: #3399ff;
+  padding: 20px;
+  list-style-position: inside;
+  /* list-style-position: outside; */
+}
+
+.ul .li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+
+
+table, th, td {
+  border: 1px solid green;
+}
+
+th {
+  padding: 15px;
+  background-color: lightblue;
+}
+
+.li-li {
+  display: inline;
+}
+
+.strong {
+  display: block;
+}
+
+.my-position {
+  position: relative;
+}
+
+#my-title {
+  /* position: absolute; */
+  top: 0;
+  z-index: 1;  
+}
+
+#my-intro {
+  /* position: absolute; */
+  top: 0;
+  z-index: 0;
+}
+
+.intro {
+  width: 300px;
+  margin: auto;
+}
+
+.pseudo::first-line {
+  background-color: red;
+}
+
+#my-title::first-letter {
+  background-color: teal;
+  border-bottom-left-radius: 10px;
+}
+
+#example1 {
+  background-size: 300px, auto;
+  background-image: url(pexels-john-1369068.jpeg), url(pexels-pixabay-247671.jpeg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+  color: red;
+}
+
+#example2 {
+  background-color: #3399ff;
+  background-image: url("pexels-john-1369068.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 20px;
+  color: white;
+}
+
+#example3 {
+  /* background-image: url("pexels-john-1369068.jpeg"); */
+  border: 10px dotted purple;
+  padding: 35px;
+  background: yellow;
+  background-clip: content-box;
+}
+
+/* linear-gradient from top left to bottom right */
+#example4 {
+  height: 200px;
+  background-image: linear-gradient(to bottom right, white, green);
+}
+
+/* linear-gradient 70deg */
+#example5 {
+  height: 200px;
+  background-image: linear-gradient(70deg, yellow, blue);
+}
+
+/* radial gradient */
+#example6 {
+  height: 200px;
+  /* background-image: radial-gradient(pink, green); */
+  background-image: radial-gradient(circle, white, green);
+}
+
+/* text-shadow - 2px horizontal, 2px horizontal, 5px blur radius, color */
+#example7 {
+  text-shadow: 2px 2px 5px green;
+  box-shadow: 10px 5px red;
+}
+
+#h1-example7 {
+  text-shadow: 2px 2px 5px blue, 3px 3px 10px red;
+}
+
+.deloc {
+  width: 200px;
+  white-space: nowrap;
+  border: 1px solid #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.p-example9 {
+  width: 150px;
+  color: navy;
+  border: 3px solid red;
+  word-wrap: break-word;
+}
+
+.thisisadiv {
+  width: 200px;
+  height: 200px;
+  background-color: royalblue;
+  border: 3px yellow solid;
+  transition: all 2s ease;
+}
+
+.thisisadiv:hover {
+  background-color: green;
+  transform: rotate(180deg);
+  border: 3px red solid;
+}
+
+.thisisapara {
+  background-color: tomato;
+  /* transform: translate(100px, 200px); */
+  /* transform: rotate(45deg); */
+  /* transform: scale(0.5, 2); */
+  /* transform: skew(20deg, 30deg); */
+  /* transform: rotateY(200deg); */
+  transform: rotateZ(90deg);
+}
+
+#example10 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+#example11 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: green;
+  animation-name: example-two;
+  animation-duration: 4s;
+}
+
+@keyframes example-two {
+  0%   {left:0px; top: 0px;};
+  25%  {left:0px; top:200px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:200px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+#example12 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: aquamarine;
+  animation-name: example-three;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes example-three {
+  0% {background-color: tomato; left: 0;}
+  50%{background-color: teal; left: 200px;}
+  100%{background-color: tomato; left: 0px;}
+}
+
+#example13 {
+  border: 10px dashed darkslateblue;
+  padding: 20px;
+  background-color: thistle;
+  background-clip: padding-box;
+}
+
+.container-tooltip {
+  text-align: center;
+  background-color: rosybrown;
+}
+
+.tooltip {
+  outline-style: none;
+  margin: 22px 22px 6px 22px;
+  padding: 4px 2px;
+  border-radius: 6px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted red;
+  background-color: #3399ff;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 117%;
+  left: 50%;
+  margin: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
