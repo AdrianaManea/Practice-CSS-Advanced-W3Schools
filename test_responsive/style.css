@@ -1,0 +1,82 @@
+/* @import 'media.css'; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --bg-color: white;
+  --text-color: black;
+
+  line-height: 50px;
+  padding: 25px;
+
+  /* background-color: var(--text-color);
+  color: var(--bg-color); */
+}
+
+/* Container-column-flex */
+.container-column-flex {
+  background-color: cornflowerblue;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.column-flex {
+  flex: 25%;
+  padding: 20px;
+}
+
+
+/* Container-column-float */
+.container-column-float {
+  background-color: darkcyan;
+}
+
+.column-float {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.row-float::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Container float */
+.container-float {
+  background-color: burlywood;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  transition: all 0.3s ease-in-out;
+  /* background-color: aquamarine; */
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #333;
+}

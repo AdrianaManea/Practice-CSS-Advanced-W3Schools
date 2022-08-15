@@ -1,0 +1,40 @@
+/* Preferes color scheme */
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --bg-color: black;
+    --text-color: white;
+  }
+}
+
+
+@media screen and (max-width:990px) {
+  /* Container-column-flex */
+  .column-flex {
+    flex: 50%;
+  }
+
+
+  /* Container float */
+  .column-float {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Container-column-flex */
+  .row-flex {
+    flex-direction: column;
+  }
+
+  /* Container-column-float */
+  .column-float {
+    width: 100%;
+  }
+
+  /* Container float */
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
